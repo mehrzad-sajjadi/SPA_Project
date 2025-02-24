@@ -1,8 +1,9 @@
 function About(){
     return(
         <>  
-            <h1>
+            <h1 style={{fontFamily:"Vazir"}}>
                 About
+                درباره ما
             </h1>
         </>
     )
