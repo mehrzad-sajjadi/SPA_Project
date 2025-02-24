@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("./assets/fonts/IRANSans-web.woff") format(woff);
+}
+@font-face {
+    font-family: "IRANSansBold";
+    src: url("./assets/fonts/IranianSansBold.ttf");
+}
+
+@font-face {
+    font-family: "Vazir";
+    src: url("./assets/fonts/Vazir-Bold.woff") format(woff);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "IRANSansBold",sans-serif;
+}
