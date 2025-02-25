@@ -2,14 +2,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {NavLink} from  "react-router";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import "./Header.css";
 function Header(){
   return(
     <Navbar expand="md" className='bg-[rgb(186,182,253)] flex justify-between'>
       <Container >
+
         <Nav  >
             <Nav.Link href="/"  style={{color:"black",fontFamily:"Vazir",fontSize:"25px"}}> نکست وان کد </Nav.Link>
         </Nav>
+        {/* رسپانسیو و حالت دکمه در موبایل */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Offcanvas id="basic-navbar-nav"   >
           <Nav  className='flex justify-end'>
             <NavLink to="/" className="nav-link" >صفحه اصلی </NavLink>
@@ -26,7 +32,13 @@ function Header(){
   );
 }
 
+
+
 export default Header;
+
+
+
+
 
 
 
