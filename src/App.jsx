@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from "./pages/home/Home";
-import About from "./pages/About/About";
+import About from "./pages/about/About";
 import Blog from "./pages/article/Article";
 import Login from "./pages/Login/Login";
 import Panel from "./pages/Panel/Panel";
-
+import Article from './pages/article/Article';
 
 
 function App() {
@@ -17,7 +17,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/article" element={<Article />} />
+          
           <Route path="/login" element={<Login />} />
+
           <Route path="/panel" element={<Panel />} />
         </Routes>
       </BrowserRouter>
