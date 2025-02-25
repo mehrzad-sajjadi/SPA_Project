@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from "./pages/home/Home";
 import About from "./pages/About/About";
-import Blog from "./pages/Blog/Blog";
+import Blog from "./pages/article/Article";
 import Login from "./pages/Login/Login";
 import Panel from "./pages/Panel/Panel";
 
