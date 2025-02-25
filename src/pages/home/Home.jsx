@@ -2,7 +2,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Header from "../../components/Header";
 import codeImage from "../../assets/img/programming.svg";
 import Course from "../../components/Courses";
-import JS from "../../assets/img/JS.png"
+import JS from "../../assets/img/JS.jpg"
+import React from "../../assets/img/react.jpg"
+import Nodejs from "../../assets/img/nodejs.jpg"
+
+
 
 function Home(){
     return(
@@ -24,9 +28,18 @@ function Home(){
                     </Col>
 
                 </Row>
-                <Row>
-                    <Col>
+                <Row className=" justify-start">
+                    <Col >
                         <Course img={JS} title="دوره جاوااسکریپت" text="آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور" />
+            
+                    </Col>
+                    <Col >
+                        <Course img={React} title="دوره ریکت جی اس" text="آموزش جامع محور صفر تا صد ریکت جی اس به صورت پروژه محور" />
+            
+                    </Col>
+                    <Col >
+                        <Course img={Nodejs} title="دوره نود جی اس" text="آموزش جامع محور صفر تا صد نود جی اس به صورت پروژه محور" />
+            
                     </Col>
                 </Row>
             </Container>
