@@ -12,6 +12,13 @@
     src: url("./assets/fonts/Vazir-Bold.woff") format(woff);
 }
 
+@font-face {
+    font-family: "lalehzar";
+    src: url("./assets/fonts/Lalezar.ttf");
+}
+
+
+
 *{
     box-sizing: border-box;
     padding: 0;

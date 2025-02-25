@@ -11,13 +11,13 @@ function Header(){
       <Container >
 
         <Nav  >
-            <Nav.Link href="/"  style={{color:"black",fontFamily:"Vazir",fontSize:"25px"}}> نکست وان کد </Nav.Link>
+            <Nav.Link href="/"  style={{color:"black",fontFamily:"lalehzar",fontSize:"25px"}}> نکست وان کد </Nav.Link>
         </Nav>
         {/* رسپانسیو و حالت دکمه در موبایل */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Offcanvas id="basic-navbar-nav"   >
-          <Nav  className='flex justify-end'>
+          <Nav  className='flex justify-end text-sm'>
             <NavLink to="/" className="nav-link" >صفحه اصلی </NavLink>
             <NavLink to="/about" className="nav-link" > درباره ما </NavLink>
             <NavLink to="/article" className="nav-link" > مقالات </NavLink>
