@@ -1,6 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Header from "../../components/Header";
 import codeImage from "../../assets/img/programming.svg";
+import Course from "../../components/Courses";
+import JS from "../../assets/img/JS.png"
+
 function Home(){
     return(
         <>
@@ -20,6 +23,11 @@ function Home(){
                         <img src={codeImage} className="img-fluid" />
                     </Col>
 
+                </Row>
+                <Row>
+                    <Col>
+                        <Course img={JS} title="دوره جاوااسکریپت" text="آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور" />
+                    </Col>
                 </Row>
             </Container>
         </>
