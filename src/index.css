@@ -2,10 +2,6 @@
     font-family: "IRANSans";
     src: url("./assets/fonts/IRANSans-web.woff") format(woff);
 }
-@font-face {
-    font-family: "IRANSansBold";
-    src: url("./assets/fonts/IranianSansBold.ttf");
-}
 
 @font-face {
     font-family: "Vazir";
@@ -16,6 +12,10 @@
     font-family: "lalehzar";
     src: url("./assets/fonts/Lalezar.ttf");
 }
+@font-face {
+    font-family: "yekan";
+    src: url("./assets/fonts/Yekan.ttf");
+}
 
 
 
@@ -23,5 +23,5 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "IRANSans",sans-serif;
+    font-family: "yekan",sans-serif;
 }
