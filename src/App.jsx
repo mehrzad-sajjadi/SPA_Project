@@ -11,7 +11,7 @@ import Panel from "./pages/Panel/Panel";
 function App() {
   return(
     <>  
-      <h1>نکست وان کد</h1>
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
