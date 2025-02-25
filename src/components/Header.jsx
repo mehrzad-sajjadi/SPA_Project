@@ -11,7 +11,7 @@ function Header(){
       <Container >
 
         <Nav  >
-            <Nav.Link href="/"  style={{color:"black",fontFamily:"lalehzar",fontSize:"25px"}}> نکست وان کد </Nav.Link>
+          <Nav.Link href="/"  style={{color:"black",fontFamily:"lalehzar",fontSize:"25px"}}> نکست وان کد </Nav.Link>
         </Nav>
         {/* رسپانسیو و حالت دکمه در موبایل */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
