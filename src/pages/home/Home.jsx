@@ -8,7 +8,8 @@ function Home(){
             
             <Container className="mt-5">
                 <Row className="align-middle bg-black">
-                    {/* lg => کوچکتر از lg هر col 6 قسمت از 12 قسمت رو اشغال کنه */}
+                    {/* lg -> بعد از lg هر ستون 6 قسمت از 12 قسمت رو میگیرن */}
+                    {/* کوچکتر از lg تمام 12 قسمت رو میگیرن */}
                     <Col lg="6">
                         <h1>برنامه نویسی با نکست وان کد</h1>
                         <p className="text-justify">
