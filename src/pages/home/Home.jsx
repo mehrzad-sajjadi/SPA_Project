@@ -5,10 +5,7 @@ import Course from "../../components/Courses";
 import JS from "../../assets/img/JS.jpg"
 import React from "../../assets/img/react.jpg"
 import Nodejs from "../../assets/img/nodejs.jpg"
-
-
-
-
+import Footer from "../../components/Footer";
 
 function Home(){
 
@@ -70,6 +67,7 @@ function Home(){
                     
                 </Row>
             </Container>
+            <Footer/>
         </>
     )
 }
