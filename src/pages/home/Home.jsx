@@ -1,40 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Header from "../../components/Header";
 import codeImage from "../../assets/img/programming.svg";
-import JS from "../../assets/img/JS.jpg"
-import React from "../../assets/img/react.jpg"
-import Nodejs from "../../assets/img/nodejs.jpg"
 import Footer from "../../components/Footer";
 import CourseItem from "../../components/CourseItem";
+import Courses from '../../CourseData';
 
 function Home(){
 
-    const courses = [
-        {
-            id:2,
-            img : React,
-            text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-            title : "دوره جاوااسکریپت"
-        },
-        {
-            id:1,
-            img : JS,
-            text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-            title : "دوره جاوااسکریپت"
-        },
-        {
-            id:3,
-            img : Nodejs,
-            text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-            title : "دوره جاوااسکریپت"
-        },
-        {
-            id:4,
-            img : React,
-            text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-            title : "دوره جاوااسکریپت"
-        }
-    ];
 
     return(
         <>
@@ -58,7 +30,7 @@ function Home(){
                 <Row className="pt-16 flex justify-center pb-5">
                     <h2 style={{fontFamily:"Vazir"}} className="mb-5" >دوره های آموزشی</h2>
                     {
-                        courses.map(item=>(
+                        Courses.map(item=>(
                             <Col key={item.id} className="py-3" md={6} lg={4} xl={3} >
                                 <CourseItem {...item}/>
                             </Col>)
