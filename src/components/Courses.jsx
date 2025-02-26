@@ -1,4 +1,6 @@
 import { Button } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
+import { useParams } from "react-router-dom";
 
 // function Course({img , title , text}){
 //     return(
@@ -16,9 +18,10 @@ import { Button } from "react-bootstrap";
 // }
 
 
-import Card from 'react-bootstrap/Card';
 
 function Course({img , title , text}) {
+  const getId = useParams();
+  console.log(getId);
   return (
     <Card >
       <Card.Img variant="top" src={img} />

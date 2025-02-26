@@ -6,6 +6,7 @@ import Blog from "./pages/article/Article";
 import Login from "./pages/Login/Login";
 import Panel from "./pages/Panel/Panel";
 import Article from './pages/article/Article';
+import Course from './components/Courses';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/article" element={<Article />} />
-          
+          <Route path='/course/:lskfldsjlj' element={<Course />} />          
           <Route path="/login" element={<Login />} />
 
           <Route path="/panel" element={<Panel />} />
