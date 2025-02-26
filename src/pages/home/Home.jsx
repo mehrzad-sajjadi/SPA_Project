@@ -5,10 +5,41 @@ import Course from "../../components/Courses";
 import JS from "../../assets/img/JS.jpg"
 import React from "../../assets/img/react.jpg"
 import Nodejs from "../../assets/img/nodejs.jpg"
+import { useState } from "react";
 
 
 
 function Home(){
+
+    const [courses,setCourses] = useState(
+        [
+            {
+                id:1,
+                img : JS,
+                text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
+                title : "دوره جاوااسکریپت"
+            },
+            {
+                id:2,
+                img : React,
+                text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
+                title : "دوره جاوااسکریپت"
+            },
+            {
+                id:3,
+                img : Nodejs,
+                text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
+                title : "دوره جاوااسکریپت"
+            },
+            {
+                id:4,
+                img : React,
+                text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
+                title : "دوره جاوااسکریپت"
+            }
+        ]
+    );
+
     return(
         <>
             <Header></Header>
@@ -28,19 +59,30 @@ function Home(){
                     </Col>
 
                 </Row>
-                <Row className=" justify-start">
-                    <Col >
+                <Row className="pt-16 flex justify-center pb-5">
+                    <h2 style={{fontFamily:"Vazir"}} className="mb-5" >دوره های آموزشی</h2>
+
+                    {
+                        courses.map(item=>(
+                            <Col >
+                                <Course {...item}/>
+                            </Col>)
+                        )
+                    }
+                    
+             
+                    {/* <Col >
                         <Course img={JS} title="دوره جاوااسکریپت" text="آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور" />
-            
-                    </Col>
-                    <Col >
+                    </Col> */}
+                    {/* <Col >
                         <Course img={React} title="دوره ریکت جی اس" text="آموزش جامع محور صفر تا صد ریکت جی اس به صورت پروژه محور" />
-            
                     </Col>
                     <Col >
                         <Course img={Nodejs} title="دوره نود جی اس" text="آموزش جامع محور صفر تا صد نود جی اس به صورت پروژه محور" />
-            
                     </Col>
+                    <Col >
+                        <Course img={React} title="دوره ریکت جی اس" text="آموزش جامع محور صفر تا صد ریکت جی اس به صورت پروژه محور" />
+                    </Col> */}
                 </Row>
             </Container>
         </>
