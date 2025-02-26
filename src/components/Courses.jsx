@@ -1,6 +1,6 @@
 import { Button } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 // function Course({img , title , text}){
 //     return(
@@ -20,7 +20,7 @@ import { useParams } from "react-router-dom";
 
 
 function Course({img , title , text}) {
-  const getId = useParams();
+  const getId = useParams().lskfldsjlj;
   console.log(getId);
   return (
     <Card >
@@ -30,7 +30,11 @@ function Course({img , title , text}) {
         <Card.Text>
             {text}
         </Card.Text>
-        <Button variant="primary">خرید دوره</Button>
+        <Button variant="primary">
+          <Link className="text-white no-underline">
+            خرید دوره
+          </Link>
+        </Button>
       </Card.Body>
     </Card>
   );
