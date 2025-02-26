@@ -59,7 +59,6 @@ function Home(){
                 </Row>
                 <Row className="pt-16 flex justify-center pb-5">
                     <h2 style={{fontFamily:"Vazir"}} className="mb-5" >دوره های آموزشی</h2>
-
                     {
                         courses.map(item=>(
                             <Col key={item.id} className="py-3" md={6} lg={4} xl={3} >
@@ -68,19 +67,6 @@ function Home(){
                         )
                     }
                     
-             
-                    {/* <Col >
-                        <Course img={JS} title="دوره جاوااسکریپت" text="آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور" />
-                    </Col> */}
-                    {/* <Col >
-                        <Course img={React} title="دوره ریکت جی اس" text="آموزش جامع محور صفر تا صد ریکت جی اس به صورت پروژه محور" />
-                    </Col>
-                    <Col >
-                        <Course img={Nodejs} title="دوره نود جی اس" text="آموزش جامع محور صفر تا صد نود جی اس به صورت پروژه محور" />
-                    </Col>
-                    <Col >
-                        <Course img={React} title="دوره ریکت جی اس" text="آموزش جامع محور صفر تا صد ریکت جی اس به صورت پروژه محور" />
-                    </Col> */}
                 </Row>
             </Container>
         </>
