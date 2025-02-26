@@ -11,34 +11,6 @@ import { useState } from "react";
 
 function Home(){
 
-    // const [courses,setCourses] = useState(
-    //     [
-    //         {
-    //             id:1,
-    //             img : JS,
-    //             text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-    //             title : "دوره جاوااسکریپت"
-    //         },
-    //         {
-    //             id:2,
-    //             img : React,
-    //             text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-    //             title : "دوره جاوااسکریپت"
-    //         },
-    //         {
-    //             id:3,
-    //             img : Nodejs,
-    //             text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-    //             title : "دوره جاوااسکریپت"
-    //         },
-    //         {
-    //             id:4,
-    //             img : React,
-    //             text : "آموزش جامع محور صفر تا صد جاوااسکریپت به صورت پروژه محور",
-    //             title : "دوره جاوااسکریپت"
-    //         }
-    //     ]
-    // );
     const courses = [
         {
             id:2,
@@ -90,7 +62,7 @@ function Home(){
 
                     {
                         courses.map(item=>(
-                            <Col >
+                            <Col key={item.id} className="py-3" md={6} lg={4} xl={3} >
                                 <Course {...item}/>
                             </Col>)
                         )
