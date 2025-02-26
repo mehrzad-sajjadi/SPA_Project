@@ -2,7 +2,7 @@ import Nodejs from "./assets/img/nodejs.jpg"
 import JS from "./assets/img/JS.jpg"
 import React from "./assets/img/react.jpg"
 
-const Courses = [
+const CoursesData = [
   {
     id: 2,
     img: React,
@@ -29,4 +29,4 @@ const Courses = [
   },
 ];  
 
-export default Courses;
+export default CoursesData;

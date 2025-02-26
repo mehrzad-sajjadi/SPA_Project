@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import codeImage from "../../assets/img/programming.svg";
 import Footer from "../../components/Footer";
 import CourseItem from "../../components/CourseItem";
-import Courses from '../../CourseData';
+import CoursesData from '../../CourseData';
 
 function Home(){
 
@@ -30,7 +30,7 @@ function Home(){
                 <Row className="pt-16 flex justify-center pb-5">
                     <h2 style={{fontFamily:"Vazir"}} className="mb-5" >دوره های آموزشی</h2>
                     {
-                        Courses.map(item=>(
+                        CoursesData.map(item=>(
                             <Col key={item.id} className="py-3" md={6} lg={4} xl={3} >
                                 <CourseItem {...item}/>
                             </Col>)
