@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Header from "../../components/Header";
 import codeImage from "../../assets/img/programming.svg";
-import Course from "../../components/Courses";
 import JS from "../../assets/img/JS.jpg"
 import React from "../../assets/img/react.jpg"
 import Nodejs from "../../assets/img/nodejs.jpg"
 import Footer from "../../components/Footer";
+import CourseItem from "../../components/CourseItem";
 
 function Home(){
 
@@ -60,14 +60,14 @@ function Home(){
                     {
                         courses.map(item=>(
                             <Col key={item.id} className="py-3" md={6} lg={4} xl={3} >
-                                <Course {...item}/>
+                                <CourseItem {...item}/>
                             </Col>)
                         )
                     }
                     
                 </Row>
             </Container>
-            <Footer/>
+            <Footer></Footer>
         </>
     )
 }
