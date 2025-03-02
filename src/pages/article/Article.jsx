@@ -29,11 +29,7 @@ function Article(){
                 <Link to='/article/react'>   React       </Link>
             </div> */}
             <hr />
-            <Routes>
-                <Route path='php' element={<h2 className='text-center'>php article</h2>} />
-                <Route path='js' element={<h2 className='text-center'>Javascript article</h2>} />
-                <Route path='react' element={<h2 className='text-center'>React article</h2>} />
-            </Routes>        
+      
         </>
     )
 }
