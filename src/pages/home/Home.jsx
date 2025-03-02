@@ -36,7 +36,6 @@ function Home(){
                             </Col>)
                         )
                     }
-                    
                 </Row>
             </Container>
             <Footer></Footer>

@@ -5,6 +5,7 @@ import CoursesData from "../../CourseData";
 
 function Course(){
     let course = useParams().id;
+    console.log(course);
     let item = CoursesData.find(obj=>obj.id==course);
     console.log(item);
     return(
