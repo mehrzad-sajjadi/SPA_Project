@@ -19,16 +19,8 @@ function Article(){
             <Header></Header>
             <h1 className="py-4 text-center ">صفحه مقالات</h1>
             <hr />
-            <div className='flex justify-center py-5'>
-                <Button className='mx-2' >
-                    <Link to='/article/php' className="text-white no-underline">php</Link>
-                </Button>
-                <Button className='mx-2'>
-                    <Link to='/article/js' className="text-white no-underline">JavaScript</Link>
-                </Button>
-                <Button className='mx-2'>
-                    <Link to='/article/react' relative='path' className="text-white no-underline">React</Link>
-                </Button>
+            <div className='flex justify-center '>
+                
             </div>
 
             {/* <div className='flex justify-center py-5'>
