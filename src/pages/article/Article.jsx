@@ -8,7 +8,9 @@ function Article(){
             <Header></Header>
             <h1 className="py-4 text-center ">صفحه مقالات</h1>
             <hr />
-            <Routes></Routes>
+            <Routes>
+                <Route path='php' element={<h2 className='text-center'>php article</h2>} />
+            </Routes>        
         </>
     )
 }
