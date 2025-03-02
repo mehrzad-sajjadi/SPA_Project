@@ -1,4 +1,4 @@
-import { Routes,Route,Link  } from 'react-router-dom';
+import { Routes,Route,Link,Outlet  } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Header from "../../components/Header";
 function Article(){
@@ -29,7 +29,7 @@ function Article(){
                 <Link to='/article/react'>   React       </Link>
             </div> */}
             <hr />
-      
+            
         </>
     )
 }
